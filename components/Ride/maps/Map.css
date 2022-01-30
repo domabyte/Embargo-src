@@ -124,3 +124,124 @@
     justify-content: center;
     margin-top: 30px;
 }
+.sec_containerPr{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: rgb(229 231 235);
+}
+.sec_container{
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    margin-top: -10px;
+}
+.sec_containerPr .backbutton{
+    background-color: #fff;
+    padding: 5px;
+} 
+.sec_containerPr .input .circle{
+    display: flex;
+    flex-direction: column;
+}
+.sec_containerPr .input .circle>img{
+    width: 15px;
+    height: 15px;
+    margin: 25px;
+}
+.sec_containerPr .input .line>img{
+    margin-left: 2.5px;
+    margin-top: -30px;
+    padding: 5px;
+}
+.sec_containerPr .input .square>img{
+    width: 15px;
+    height: 15px;
+    margin: 25px;
+    margin-top: -12px;
+}
+.type{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+.type input{
+    background-color: rgb(229 231 235);
+    text-overflow: ellipsis;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 30px;
+    min-height: 52px;
+    font-weight: normal;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #000000;
+    width: 90%;
+    overflow: hidden;
+    border: none;
+}
+.savedPlaces{
+    background-color: #fff;
+    margin-top: 5px;
+    align-items: center;
+    display: flex;
+}
+.savedPlaces img{
+    background-color: rgb(156 163 175);
+    color: #fff;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+.savedPlaces p{
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-bottom: 18px;
+    padding-top: 18px;
+    color: #111;
+    background-color: #fff;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: sans-serif;
+    font-weight: 700;
+    width:100%;
+    align-items: center;
+    cursor: pointer;
+    outline: none;
+}
+.confirmLocation{
+    background-color: #fff;
+    height: 100%;
+    margin-top: 7px;
+    margin-bottom: 2px;
+}
+.confirmLocation .confirm_button{
+    justify-content: center;
+    display: flex;
+    height: 100%;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.confirmLocation .confirm_button .confirm{
+    display: flex;
+    justify-content: center;
+     padding-right: 25px;
+    padding-left: 25px;
+    color: #FFF;
+    background-color: #111;
+    font-size: 16px;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    outline: none;
+    padding-top: 15px;
+}
