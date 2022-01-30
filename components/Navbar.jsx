@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import logo from "../images/logo.png"
 
 function Navbar({sticky}) {
   const [isActive, setIsActive] = useState(false);
   const toggleClass = () => {
     setIsActive(!isActive);
   }
-  const logo = "logo.png";
   return (
     <>
       <div className="page-wrapper">

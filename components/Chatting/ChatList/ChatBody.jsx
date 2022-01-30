@@ -6,28 +6,11 @@ import SearchOutlined from "@mui/icons-material/SearchOutlined";
 import SidebarChats from './SidebarChats';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import db from '../../../Firebase';
-import Lottie from "react-lottie";
+import AnimationLottie from '../../../AnimationLottie';
 import AnimationChat from "../../../lotties/chat.json";
 import AnimationComingSoon from "../../../lotties/coming soon.json";
 
 function ChatBody() {
-
-    const defaultOptions1 = {
-        loop: true,
-        autoplay: true,
-        animationData: AnimationChat,
-        rendererSettings: {
-          preserveAspectRatio: "xMidYMid slice"
-        }
-      };
-      const defaultOptions2 = {
-        loop: true,
-        autoplay: true,
-        animationData: AnimationComingSoon,
-        rendererSettings: {
-          preserveAspectRatio: "xMidYMid slice"
-        }
-      };
     const [click, setClick] = useState(false);
     const [rooms, setRooms] = useState([]);
     const [shift, setShift] = useState(true);
@@ -71,16 +54,8 @@ function ChatBody() {
                 {rooms.map(rooms => (<SidebarChats key={rooms.id} id={rooms.id} name={rooms.data.name} />))}
             </div>}
             {(!shift)&&<div className="chats_rules sidebar_chats">
-            {<Lottie
-          options={defaultOptions2}
-          height={250}
-          width={400}
-        />}
-            {<Lottie
-          options={defaultOptions1}
-          height={250}
-          width={300}
-        />}
+        <AnimationLottie name={AnimationComingSoon} height={250} width={400}/>
+        <AnimationLottie name={AnimationChat} height={250} width={300}/>
             </div>}
         </div>
     )

@@ -5,27 +5,28 @@ import { BrowserRouter } from 'react-router-dom';
 // import Footer from './components/Home/Footer';
 // import ContactMe from "./components/Contact/ContactMe";
 // import Resume from "./components/About/Resume";
-import Chat from "./components/Chatting/Chat";
+// import Chat from "./components/Chatting/Chat";
 // import Ride from "./components/Ride/Ride";
+import Map from "./components/Ride/maps/Map"
 import store from "./store";
 import {Provider} from "react-redux";
 store.subscribe(()=>console.log(store.getState()));
 
 
 
-// ReactDOM.render(
-//                 <>
-//         <React.StrictMode><Ride/></React.StrictMode>
-//         </>,document.getElementById("root"));
+ReactDOM.render(
+                <>
+        <React.StrictMode><Map/></React.StrictMode>
+        </>,document.getElementById("root"));
         
 
-        ReactDOM.render(
-        <>
-<React.StrictMode>
-<Provider store={store}>
-<Chat/>
-</Provider>
-</React.StrictMode>
-</>
+//         ReactDOM.render(
+//         <>
+// <React.StrictMode>
+// <Provider store={store}>
+// <Chat/>
+// </Provider>
+// </React.StrictMode>
+// </>
 
-,document.getElementById("root"));
+// ,document.getElementById("root"));

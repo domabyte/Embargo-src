@@ -1,7 +1,6 @@
 import React,{useEffect,memo} from 'react';
 import "../../components_css/AboutCo.css";
 import Footer from '../Home/Footer';
-import Lottie from "react-lottie";
 import Svg from "../../images/bg.svg";
 import Im from "../../images/aboutcoimg.jpg"
 import animationBike from "../../lotties/bik.json";
@@ -11,61 +10,13 @@ import animationBall from "../../lotties/ball.json";
 import animationWait from "../../lotties/waiting.json";
 import animationPoint from "../../lotties/point.json";
 import Profile from "../../images/profile_photo.jpg";
+import AnimationLottie from '../../AnimationLottie';
 
 const AboutCo = () => {
   
   useEffect(() => {
     window.history.scrollRestoration = "manual"
   }, []);
-
-  const defaultOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: animationBike,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice"
-    }
-  };
-  const defaultOptions1 = {
-    loop: true,
-    autoplay: true,
-    animationData: animationHelmet,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice"
-    }
-  };
-  const defaultOptions2 = {
-    loop: true,
-    autoplay: true,
-    animationData: animationDot,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice"
-    }
-  };
-  const defaultOptions3 = {
-    loop: true,
-    autoplay: true,
-    animationData: animationBall,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice"
-    }
-  };
-  const defaultOptions4 = {
-    loop: true,
-    autoplay: true,
-    animationData: animationWait,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice"
-    }
-  };
-  const defaultOptions5 = {
-    loop: true,
-    autoplay: true,
-    animationData: animationPoint,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice"
-    }
-  };
   return (
     <>
       <main>
@@ -120,12 +71,7 @@ const AboutCo = () => {
                 <div className="wp-block-column mb-40 md:offset-2 md:col-8">
                   <h2 className="has-text-align-center has-xlarge-font-size" id="h-getting-businesses-moving-since-2010" style={{ "color": "#111" }}><strong>Getting Ready for moving along with Embargo</strong></h2>
                   <div>
-                    <Lottie
-                      options={defaultOptions2}
-                      height={400}
-                      width={600}
-                      speed={2.5}
-                    />
+                    <AnimationLottie name={animationDot} height={400} width={600} speed={2.5}/>
                   </div>
                 </div>
 
@@ -136,11 +82,7 @@ const AboutCo = () => {
                   <img src="https://www.rapido.bike/images/g_p.svg" alt='design pattern' />
                 </div>
                 <div className='planet is--left'>
-                  <Lottie
-                    options={defaultOptions1}
-                    height={320}
-                    width={300}
-                  />
+                  <AnimationLottie name={animationHelmet} height={320} width={300}/>
                 </div>
               </div>
 
@@ -185,11 +127,7 @@ const AboutCo = () => {
           `}</style>
               <div className="wp-block-columns mb-40" style={{ "zIndex": "10" }}>
                 <div className="wp-block-column col-11 md:col-9">
-                  <Lottie
-                    options={defaultOptions}
-                    height={400}
-                    width={600}
-                  />
+                  <AnimationLottie name={animationBike} height={400} width={600}/>
                 </div>
 
               </div>
@@ -201,11 +139,7 @@ const AboutCo = () => {
                 </div>
                 <div className='pattern_down'>
                   <img src='https://www.rapido.bike/images/y_p.svg' alt='pattern' loading='lazy' />
-                  <Lottie
-                    options={defaultOptions3}
-                    height={330}
-                    width={300}
-                  />
+                   <AnimationLottie name={animationBall} height={330} width={300}/>
                 </div>
               </div>
 
@@ -263,13 +197,8 @@ const AboutCo = () => {
                         </div>
                       </div>
                       <div className="wp-block-image mb-104 md:mb-144"><figure className="aligncenter size-large">
-                      <Lottie
-                    options={defaultOptions4}
-                    height={320}
-                    width={500}
-                    className="wp-image-6998 lazyloaded" 
-                    data-ll-status="loaded"
-                   />
+                    <AnimationLottie name={animationWait} height={320} width={500} className="wp-image-6998 lazyloaded" 
+                    data-ll-status="loaded"/>
                       </figure>
                       <div className='founder_container'>
                         <div className='sidebar_left'>
@@ -286,11 +215,7 @@ const AboutCo = () => {
           </h1>
                         </div>
                       </div>
-                      <Lottie
-                    options={defaultOptions5}
-                    height={125}
-                    width={90}
-                   />
+                    <AnimationLottie name={animationPoint} height={125} width={90}/>
                       <div className='Aboutme'>
         <a className="Aboutme_button" href="#/">Curious About Me </a>
       </div>

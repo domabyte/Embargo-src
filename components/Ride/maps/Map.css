@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.map-container {
+  height: 400px;
+  position: absolute;
+  opacity: 1;
+}
+
+.sidebar {
+  background-color: rgba(35, 55, 75, 0.9);
+  color: #fff;
+  padding: 6px 12px;
+  font-family: monospace;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 12px;
+  border-radius: 4px;
+}
+.map_modal{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 15px;
+    width: 40vw;
+    height: 85vh;
+    margin-right: auto;
+    min-height: 80vh;
+    margin-left: 50px;
+    position: fixed;
+    top: 0;
+    margin-top: 50px;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+    flex-direction: column;
+}
+.map_modal .mapModal_navPr{
+    background-color: #276EF1;
+    box-sizing: border-box;
+    display: flex;
+    color: #fff;
+    position: relative;
+}
+.map_modal .mapModal_navPr .mapModal_nav{
+    padding-top: 30px;
+    padding-right: 20px;
+    padding-left: 40px;
+    padding-bottom: 10px;
+    color: #fff;
+}
+.map_modal .mapModal_navPr .mapModal_nav .secondlinePr{
+    display: flex;
+    flex-direction: row;
+}
+.secondline{
+    padding-right: 16px;
+    line-height: 44px;
+    font-size: 36px;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: MoveMedium,system-ui, Helvetica, Arial, sans-serif;
+    font-weight: 600;
+}
+.secondline_lottie{
+    padding-right: 0px;
+    margin-left: 20px;
+}
+.action{
+    display: flex;
+}
+.action_child{
+    margin-top: 15px;
+    flex: 1;
+    cursor: pointer;
+}
+.action_child span{
+    margin-left: 30px;
+    padding: 20px;
+    cursor: pointer;
+    line-height: 30px;
+    font-size: 16px;
+    box-sizing: border-box;
+    color: #111;
+    font-family: MoveMedium,system-ui, Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    
+}
+.action_child:nth-child(1):hover{
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+.action_child:nth-child(2):hover{
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+.action_child:nth-child(3):hover{
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+.destination{
+    background: lightgray;
+    padding: 5px;
+    height: 50px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.destination span{
+    font-size: 30px;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+.powered{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}

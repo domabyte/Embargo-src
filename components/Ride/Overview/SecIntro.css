@@ -76,3 +76,8 @@ h2{
     padding-bottom: 5px;
     border-bottom: 2px solid gray;
 }
+.contact a span:hover{
+    padding-bottom: 5px;
+    border-bottom: 2px solid #000;
+    transition: all 0.3s ease-in-out;
+}
