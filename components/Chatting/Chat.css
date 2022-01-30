@@ -4,16 +4,6 @@
   box-sizing: border-box;
 }
 .container {
-  /* background: #edc0bf; */
-  /* background: linear-gradient(90deg, #edc0bf 0,#c4caef 58%); */
-  /* background:
-    linear-gradient(322deg, 
-      #ba4aff, rgba(#ba4aff, 0) 70%),
-    linear-gradient(178deg,
-      #008aff, rgba(#008aff, 0) 70%),
-    linear-gradient(24deg,
-      #00ffc6, rgba(#00ffc6, 0) 35%); */
-      /* background: url("../../images/wallpaperflare.com_wallpaper.jpg"); */
       background: url("https://cdn.wallpaperhub.app/cloudcache/4/4/7/5/e/7/4475e73c885921925f61fcf123c7c8c1f93e1c0c.jpg");
       background-position: center;
       background-repeat: no-repeat;

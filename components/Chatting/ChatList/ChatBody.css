@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   flex: 1;
-  border-left: 1px solid lightgray;
+  border-left: 1px solid black;
   width: 90%;
   height: 100%;
   border-radius: 20px;
@@ -53,7 +53,6 @@
   text-decoration: none;
   border-radius: 15px;
   background-color: #afe1af;
-  /* border: 1px solid green; */
   backdrop-filter: blur(30px);
   color: green;
   font-size: 14px;
@@ -63,20 +62,19 @@
   margin-right: 15px;
 }
 .sidebar_headerRight .glass-button2{
-  display: inline-block;
-  padding: 16px 20px;
-  border: 0;
-  text-decoration: none;
-  border-radius: 15px;
-  background-color: #fcd8c1;
-  color: #f28c28;
-  /* border: 1px solid lightcoral; */
-  backdrop-filter: blur(30px);
-  font-size: 14px;
-  letter-spacing: 2px;
-  cursor: pointer;
-  text-transform: uppercase;
-  margin-right: 15px;
+    display: inline-block;
+    padding: 16px 20px;
+    border: 0;
+    text-decoration: none;
+    border-radius: 15px;
+    background-color: #fcd8c1;
+    color: #f28c28;
+    backdrop-filter: blur(30px);
+    font-size: 14px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-right: 15px;
 }
 .sidebar_headerRight .glass-button1:hover {
   background-color: lightgreen;

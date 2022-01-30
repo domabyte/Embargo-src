@@ -1,4 +1,4 @@
-import { Icon, IconButton } from '@mui/material';
+import {IconButton } from '@mui/material';
 import React, { useState, useEffect } from 'react';
 import "./ChatBody.css";
 import { Avatar } from "@material-ui/core";
@@ -47,7 +47,7 @@ function ChatBody() {
         setClick(!click);
     }
     useEffect(() => {
-    }, [click])
+    }, [click]);
     return (
         <div className='sidebar'>
             <div className='sidebar_header'>
@@ -57,7 +57,7 @@ function ChatBody() {
                     </IconButton>
                 </div>
                 <div className='sidebar_headerRight'>
-                    <button className="glass-button1" onClick={()=>setShift(true)}>Messages</button>
+                    <button className="glass-button1" onClick={()=>setShift(true) }>Messages</button>
                     <button className="glass-button2" onClick={()=>setShift(false)}>Rules</button>
                 </div>
             </div>
