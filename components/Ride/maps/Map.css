@@ -27,9 +27,9 @@
     background-color: #fff;
     border-radius: 15px;
     width: 40vw;
-    height: 85vh;
+    height: 88vh;
     margin-right: auto;
-    min-height: 80vh;
+    min-height: 88vh;
     margin-left: 50px;
     position: fixed;
     top: 0;
@@ -88,7 +88,23 @@
     font-family: MoveMedium,system-ui, Helvetica, Arial, sans-serif;
     font-weight: 600;
     text-decoration: none;
-    
+}
+.action .action_child{
+    margin-top: 15px;
+    flex: 1;
+    cursor: pointer;
+}
+.action .action_child span{
+    margin-left: 30px;
+    padding: 20px;
+    cursor: pointer;
+    line-height: 30px;
+    font-size: 16px;
+    box-sizing: border-box;
+    color: #111;
+    font-family: MoveMedium,system-ui, Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    text-decoration: none;
 }
 .action_child:nth-child(1):hover{
     transform: scale(1.1);
@@ -103,16 +119,19 @@
     transition-duration: 0.5s;
 }
 .destination{
-    background: lightgray;
+    background: #111;
+    color: #fff;
+    cursor: pointer;
     padding: 5px;
     height: 50px;
     margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 40%;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 10px;
 }
 .destination span{
     font-size: 30px;
@@ -216,24 +235,24 @@
 .confirmLocation{
     background-color: #fff;
     height: 100%;
-    margin-top: 7px;
-    margin-bottom: 2px;
+    margin-top: 5px;
 }
 .confirmLocation .confirm_button{
     justify-content: center;
     display: flex;
-    height: 100%;
-    width: 40%;
+    height: 80%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5px;
     cursor: pointer;
     border-radius: 10px;
+    margin-top: 10px;
 }
-.confirmLocation .confirm_button .confirm{
+.confirm{
     display: flex;
     justify-content: center;
      padding-right: 25px;
+     width: 50%;
     padding-left: 25px;
     color: #FFF;
     background-color: #111;
@@ -244,4 +263,36 @@
     cursor: pointer;
     outline: none;
     padding-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ride_container{
+    display: table;
+    border-collapse: collapse;
+    /* height: 100%; */
+    min-height: 200px;
+}
+.confirmRequest{
+    display: table-row;
+    background-color: #111;
+    height: 100%;
+    vertical-align: bottom;
+    height: 1px;
+    padding-top: 10px;
+    color: #fff;
+    width: 80%;
+}
+.RequestButton{
+    margin-left: 10px;
+    margin-right: 10px;
+    justify-content: center;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    font-family: sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+}
+.confirm{
+    align-items: center;
 }

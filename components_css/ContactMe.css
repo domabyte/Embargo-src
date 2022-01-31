@@ -7,8 +7,7 @@
 }
 body {
   display: flex;
-  justify-content: center;
-  /* align-items: center; */
+  align-items: center;
   min-height: 100vh;
   background: #00ffff;
   transition: 0.5s;

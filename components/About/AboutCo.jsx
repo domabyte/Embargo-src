@@ -1,4 +1,4 @@
-import React,{useEffect,memo} from 'react';
+import React, { useEffect, memo } from 'react';
 import "../../components_css/AboutCo.css";
 import Footer from '../Home/Footer';
 import Svg from "../../images/bg.svg";
@@ -11,14 +11,19 @@ import animationWait from "../../lotties/waiting.json";
 import animationPoint from "../../lotties/point.json";
 import Profile from "../../images/profile_photo.jpg";
 import AnimationLottie from '../../AnimationLottie';
-
+import Navbar from "../Navbar";
+import useSticky from '../../Hooks/useSticky';
+import { BrowserRouter } from "react-router-dom";
 const AboutCo = () => {
-  
+  const { isSticky } = useSticky();
   useEffect(() => {
     window.history.scrollRestoration = "manual"
   }, []);
   return (
     <>
+      <div>
+        <Navbar sticky={isSticky} />
+      </div>
       <main>
         <div className="container_aboutco">
           <img className="first_svg lazyloaded" alt="" src={Svg} style={{ "objectPosition": "50% 50%" }} data-object-fit="cover" data-object-position="50% 50%" data-ll-status="loaded" />
@@ -71,7 +76,7 @@ const AboutCo = () => {
                 <div className="wp-block-column mb-40 md:offset-2 md:col-8">
                   <h2 className="has-text-align-center has-xlarge-font-size" id="h-getting-businesses-moving-since-2010" style={{ "color": "#111" }}><strong>Getting Ready for moving along with Embargo</strong></h2>
                   <div>
-                    <AnimationLottie name={animationDot} height={400} width={600} speed={2.5}/>
+                    <AnimationLottie name={animationDot} height={400} width={600} speed={2.5} />
                   </div>
                 </div>
 
@@ -82,7 +87,7 @@ const AboutCo = () => {
                   <img src="https://www.rapido.bike/images/g_p.svg" alt='design pattern' />
                 </div>
                 <div className='planet is--left'>
-                  <AnimationLottie name={animationHelmet} height={320} width={300}/>
+                  <AnimationLottie name={animationHelmet} height={320} width={300} />
                 </div>
               </div>
 
@@ -127,7 +132,7 @@ const AboutCo = () => {
           `}</style>
               <div className="wp-block-columns mb-40" style={{ "zIndex": "10" }}>
                 <div className="wp-block-column col-11 md:col-9">
-                  <AnimationLottie name={animationBike} height={400} width={600}/>
+                  <AnimationLottie name={animationBike} height={400} width={600} />
                 </div>
 
               </div>
@@ -139,7 +144,7 @@ const AboutCo = () => {
                 </div>
                 <div className='pattern_down'>
                   <img src='https://www.rapido.bike/images/y_p.svg' alt='pattern' loading='lazy' />
-                   <AnimationLottie name={animationBall} height={330} width={300}/>
+                  <AnimationLottie name={animationBall} height={330} width={300} />
                 </div>
               </div>
 
@@ -197,35 +202,35 @@ const AboutCo = () => {
                         </div>
                       </div>
                       <div className="wp-block-image mb-104 md:mb-144"><figure className="aligncenter size-large">
-                    <AnimationLottie name={animationWait} height={320} width={500} className="wp-image-6998 lazyloaded" 
-                    data-ll-status="loaded"/>
+                        <AnimationLottie name={animationWait} height={320} width={500} className="wp-image-6998 lazyloaded"
+                          data-ll-status="loaded" />
                       </figure>
-                      <div className='founder_container'>
-                        <div className='sidebar_left'>
-                        <figure className='img_fig'>
-                        <img src={Profile} alt="Profile" width="1000" height="1000"
-                        />
-                        </figure>
+                        <div className='founder_container'>
+                          <div className='sidebar_left'>
+                            <figure className='img_fig'>
+                              <img src={Profile} alt="Profile" width="1000" height="1000"
+                              />
+                            </figure>
+                          </div>
+                          <div className='sidebar_right'>
+                            <h3>
+                              “We’re helping pioneers become vastly more efficient when managing all of their ground transportation spend. Additionally, Embargo trying to expand the  coverage by connecting users from a grid of transportation providers locally. And the combination is designed to benefit everyone involved. By optimising the entire employee experience, we save your time, money and hassle.”
+                            </h3>
+                            <h1 className='name_heading' id="name_head">Dikshit Singh, CEO & Founder
+                            </h1>
+                          </div>
                         </div>
-                        <div className='sidebar_right'>
-          <h3>
-          “We’re helping pioneers become vastly more efficient when managing all of their ground transportation spend. Additionally, Embargo trying to expand the  coverage by connecting users from a grid of transportation providers locally. And the combination is designed to benefit everyone involved. By optimising the entire employee experience, we save your time, money and hassle.”
-          </h3>
-          <h1 className='name_heading' id="name_head">Dikshit Singh, CEO & Founder
-          </h1>
+                        <AnimationLottie name={animationPoint} height={125} width={90} />
+                        <div className='Aboutme'>
+                          <a className="Aboutme_button" href="#/">Curious About Me </a>
                         </div>
-                      </div>
-                    <AnimationLottie name={animationPoint} height={125} width={90}/>
-                      <div className='Aboutme'>
-        <a className="Aboutme_button" href="#/">Curious About Me </a>
-      </div>
                       </div>
                     </div></div>
                 </div></div>
               </div></div>
             </div></div>
           </div></div>
-      <style>{`
+        <style>{`
       .Aboutme{
         display: flex;
         justify-content: center;

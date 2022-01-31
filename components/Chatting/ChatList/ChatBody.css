@@ -11,7 +11,7 @@
   position: relative;
   z-index: 100;
   overflow: hidden;
-  background: url("../../../images/pexels-evie-shaffer-2512282.jpg");
+  /* background: url("../../../images/pexels-evie-shaffer-2512282.jpg"); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -29,6 +29,8 @@
   border-bottom: 1px solid #111;
   width: 100%;
   height: 90px;
+  backdrop-filter: blur(10px);
+  position: sticky;
 }
 ._1X8rk {
   display: inline-flex;

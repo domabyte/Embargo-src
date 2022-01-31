@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import logo from "../images/logo.png"
+import "../App.css";
 
 function Navbar({sticky}) {
   const [isActive, setIsActive] = useState(false);
@@ -25,10 +26,21 @@ function Navbar({sticky}) {
             </div>
             <div className='link-background'>
               <ul className="nav no-search">
-                <li className="nav-item home left special"><NavLink exact="true" to="/" id='underline'>Home</NavLink></li>
-                <li className="nav-item left special"><NavLink exact="true" to="/aboutMe" id='underline'>About Me</NavLink></li>
-                <li className="nav-item left special"><NavLink exact="true" to="/careers" id='underline'>Careers</NavLink></li>
-                <li className="nav-item left special"><NavLink exact="true" to="/contactMe" id='underline'>Contact Me</NavLink></li>
+                <li className="nav-item home left special">
+                <NavLink exact="true" to="/" id='underline'>Home</NavLink>
+                </li>
+                <li className="nav-item left special">
+                <NavLink exact="true" to="/aboutCo" id='underline'>About Co.</NavLink>
+                </li>
+                <li className="nav-item left special">
+                <NavLink exact="true" to="/careers" id='underline'>Careers</NavLink>
+                </li>
+                <li className="nav-item left special">
+                <NavLink exact="true" to="/chat" id='underline'>ChitChat</NavLink>
+                </li>
+                <li className="nav-item left special">
+                <NavLink exact="true" to="/contactMe" id='underline'>Contact Me</NavLink>
+                </li>
                 <li className="nav-item left"><NavLink exact="true" to="/ride"><button className='buttona'>Ride with Embargo</button></NavLink></li>
               </ul>
             </div>

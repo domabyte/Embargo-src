@@ -10,6 +10,9 @@ function ContactMe() {
                     <div className='circle'></div>
                     <div className='content_about1' style={{ '--j': 0 }}>
                         <style>{`
+                        body{
+                            justify-content:center;
+                        }
         .content_about1 p span{
             color: #666;
             font-weight : bold;

@@ -44,12 +44,12 @@ function ChatBody() {
                     <button className="glass-button2" onClick={()=>setShift(false)}>Rules</button>
                 </div>
             </div>
-            <div className='sidebar_search' tabIndex="-1">
+            {/* <div className='sidebar_search' tabIndex="-1">
                 <div className='sidebar_searchContainer'>
                     {click ? <ArrowBackIcon /> : <SearchOutlined />}
                     <input placeholder='Search or start a new chat' type='text' onFocus={handleInput} onBlur={() => setClick(!click)} />
                 </div>
-            </div>
+            </div> */}
             {(shift)&&<div className='sidebar_chats'>
                 {rooms.map(rooms => (<SidebarChats key={rooms.id} id={rooms.id} name={rooms.data.name} />))}
             </div>}

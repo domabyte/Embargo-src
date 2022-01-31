@@ -5,9 +5,14 @@ import Modal from "react-modal";
 import Register from "../modal/Register";
 import Login from '../modal/Login';
 import { CSSTransition } from 'react-transition-group';
+import Navbar from "../Navbar";
+import useSticky from "../../Hooks/useSticky";
+import { BrowserRouter } from "react-router-dom";
+import "../../App.css";
 
 Modal.setAppElement("#root");
 function Home() {
+  const {isSticky} = useSticky();
   const [isOpenRegister, setIsOpenRegister] = useState(false);
   const [blur, setBlur] = useState(false);
 
@@ -22,6 +27,9 @@ function Home() {
   }
   return (
     <>
+    <div>
+                    <Navbar sticky={isSticky}/>
+                    </div>
       <div>
         <section className={blur ? "myStyle showcase" : "showcase"}>
           <header>

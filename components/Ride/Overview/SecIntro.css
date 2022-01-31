@@ -66,17 +66,18 @@ h2{
 .contact{
     margin-left: 50px;
 }
-.contact a{
+.contact {
     font-size: 16px;
     font-weight: normal;
     text-decoration: none;
     color: #111;
 }
-.contact a span{
+.contact span{
     padding-bottom: 5px;
     border-bottom: 2px solid gray;
+    cursor: pointer;
 }
-.contact a span:hover{
+.contact span:hover{
     padding-bottom: 5px;
     border-bottom: 2px solid #000;
     transition: all 0.3s ease-in-out;

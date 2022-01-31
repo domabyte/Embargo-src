@@ -1,20 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+ body{
     display: flex;
-    align-items: center;
     flex-direction: column;
     font-family: "Roboto",sans-serif;
     font-weight: 400;
 }
+
 main{
     background: #fff;
     transition: 5s;
 }
+
 .container_aboutco{
     height: auto;
     min-height: auto;
@@ -28,6 +29,7 @@ main{
     align-items: center;
     box-sizing: border-box;
 }
+
 .container_aboutco-image img.first_svg, .container_aboutco img.first_svg{
     position: absolute;
     top: 0;
@@ -331,4 +333,3 @@ figure{
     letter-spacing: 0.02px;
     font-weight: 400;
 }
-

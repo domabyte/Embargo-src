@@ -17,16 +17,14 @@ function SecIntro() {
                         <div className='secIntro_buttonPr'>
                             <div className="secIntro_button">
                             <div className="secIntro_button">
-                            <a href='#/' text="Back now" className='ride_b'>
+                            <span className='ride_b'>
                                 Sign up to drive
-                            </a>
+                            </span>
                             </div>
                         </div>
                         </div>
                         <div className='contact'>
-                        <a href='/#' target="_self">
                         <span>Contact us to learn more</span>
-                        </a>
                         </div>
                         </div>
   </>);

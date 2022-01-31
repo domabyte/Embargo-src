@@ -5,11 +5,17 @@ import BusinessIcon from '@mui/icons-material/Business';
 import { IconButton } from '@mui/material';
 import FirstIntro from "./Overview/FirstIntro";
 import SecIntro from './Overview/SecIntro';
+// import { BrowserRouter } from 'react-router-dom';
+import { Routes, Route } from "react-router-dom";
+import Map from "./maps/Map";
 
 function Ride() {
     const [change, setChange] = useState(true);
 
     return (<>
+    {/* <Routes>
+        <Route path='/map' element={<Map/>} />
+        </Routes> */}
         <div className='ride_container'>
             <div className='ride_back'>
                 <div className='ride_modal'>

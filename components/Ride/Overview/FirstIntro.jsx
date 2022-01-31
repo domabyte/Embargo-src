@@ -1,5 +1,6 @@
 import React from 'react';
 import "./FirstIntro.css";
+import {NavLink} from "react-router-dom";
 
 function FirstIntro() {
   return (<>
@@ -22,14 +23,14 @@ function FirstIntro() {
                         </div>
                         <div className='ride_buttonPr'>
                             <div className="ride_button">
-                            <a href='#/' text="Request now" className='ride_a'>
-                                Request now
-                            </a>
+                            <div className='ride_a'>
+                            <NavLink exact="true" to="/maps" id="navli">Request now</NavLink>
+                            </div>
                             </div>
                             <div className="ride_button">
-                            <a href='#/' text="Back now" className='ride_b'>
+                            <div className='ride_b'>
                                 Back now
-                            </a>
+                            </div>
                             </div>
                         </div>
   </div>
